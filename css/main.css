@@ -2,7 +2,7 @@ body{
     height: 80%;
     width: 80%;
     background: rgb(95,251,241);
-    background: linear-gradient(180deg, rgba(95,251,241,1) 0%, rgba(91,237,246,1) 9%, rgba(70,238,250,1) 9%, rgba(87,226,249,1) 16%, rgba(82,207,254,1) 26%, rgba(105,191,248,1) 35%, rgba(121,179,244,1) 44%, rgba(138,167,236,1) 54%, rgba(154,154,225,1) 63%, rgba(170,143,216,1) 73%, rgba(186,131,202,1) 82%, rgba(199,119,185,1) 92%, rgba(209,107,165,1) 100%); 
+    background: linear-gradient(180deg, rgba(95,230,245,1) 0%, rgba(91,237,246,1) 9%, rgba(70,238,250,1) 9%, rgba(87,226,249,1) 16%, rgba(82,207,254,1) 26%, rgba(105,191,248,1) 35%, rgba(121,179,244,1) 44%, rgba(138,167,236,1) 54%, rgba(154,154,225,1) 63%, rgba(170,143,216,1) 73%, rgba(186,131,202,1) 82%, rgba(199,119,185,1) 92%, rgba(209,107,165,1) 100%); 
 }
 
 .taille{
@@ -13,7 +13,7 @@ body{
 
 /**bandeau**/
 .bd{
-    background-color: rgb(255, 255, 255,0.2);
+    background-color: rgb(255, 255, 255,0.3);
     color:black;
     text-align: center;
     padding: 10px;
@@ -150,6 +150,14 @@ h2{
     opacity: 0;
 }
 
+.bas:hover .foncé{
+    opacity: 0;
+}
+
+.bas:hover .clair{
+    opacity: 0;
+}
+
 #sectr:hover + .hide3{
     box-shadow: -5px -5px 30px 5px #74a6ec, 5px 5px 30px 5px #befcff;
     display: block;
@@ -169,11 +177,24 @@ h2{
 
 
 /**Pop up deuxième section **/
+
 #secde:hover{
     opacity: 0;
 }
 
 #secde:hover + .hide2{
+    box-shadow: -5px -5px 30px 5px #74a6ec, 5px 5px 30px 5px #befcff;
+    display: block;
+}
+
+
+/** Pop up quatrième section **/
+
+#secqu:hover{
+    opacity: 0;
+}
+
+#secqu:hover + .hide4{
     box-shadow: -5px -5px 30px 5px #74a6ec, 5px 5px 30px 5px #befcff;
     display: block;
 }
@@ -219,8 +240,23 @@ h2{
     border-width: 10px;
 }
 
+.hide4{
+
+    display: none;
+    position: absolute;
+    background-color:rgba(147,195,246,255);
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.4);
+    border-width: 10px;
+}
+
 /**Pied de page **/
 footer{
+    margin-top: 2%;
     height: 10vh;
     text-align: right;
     border-color: #a3539e;
@@ -311,4 +347,23 @@ img{
     margin-top: 45px;
     margin-left: 40px;
     border-radius: 10px;    
+}
+
+/** **/
+.cv{
+    background-color: rgba(255,255,255,0.2);
+    width: 80vh;
+    height: 100vh;
+    margin-left: 20%;
+    margin-top: 3%;
+    border-radius: 20px;
+    border: solid;
+    border-width: 15px;
+    border-color: rgba(255,255,255,0.2);
+}
+
+.cv > h2{
+    margin-left: 35%;
+    font-size: 2em;
+
 }
