@@ -1,0 +1,314 @@
+body{
+    height: 80%;
+    width: 80%;
+    background: rgb(95,251,241);
+    background: linear-gradient(180deg, rgba(95,251,241,1) 0%, rgba(91,237,246,1) 9%, rgba(70,238,250,1) 9%, rgba(87,226,249,1) 16%, rgba(82,207,254,1) 26%, rgba(105,191,248,1) 35%, rgba(121,179,244,1) 44%, rgba(138,167,236,1) 54%, rgba(154,154,225,1) 63%, rgba(170,143,216,1) 73%, rgba(186,131,202,1) 82%, rgba(199,119,185,1) 92%, rgba(209,107,165,1) 100%); 
+}
+
+.taille{
+    margin-top: 4%;
+    margin-left: 20%;
+}
+
+
+/**bandeau**/
+.bd{
+    background-color: rgb(255, 255, 255,0.2);
+    color:black;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+#bdun{
+    font-size: 2.4em;
+}
+
+#etud{
+    font-size: 2em
+}
+
+.bdh{
+    background-color: rgb(223, 172, 109);
+}
+
+    
+section{
+    margin: 20px;
+    display: inline-block;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+#articles{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+h2{
+    margin-left: 10%;
+    margin-right:10%;
+    color: black;
+}
+    
+.foncé{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+}
+
+.clair{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+}
+
+.haut{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    margin-bottom: 0px;
+}
+
+
+
+#secde,#secun, #sectr{
+    z-index: 1;
+}
+
+.bas{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    margin-left: 20%;
+}
+
+/** Textes **/
+.TBru{
+    margin-top: 200px;
+}
+
+
+.hide2 > p{
+    text-align: center;
+    margin-left: 150px;
+    font-size: 1.5em;
+}
+
+.hide3 > p{
+    text-align: center;
+    margin-left: 150px;
+    font-size: 1.5em;
+}
+
+.hide > p{
+    font-size: 1.5em;
+}
+
+
+.tprov{
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.tardon{
+    margin-top: 50px;
+}
+
+.tpm{
+    margin-top: 100px; 
+}
+
+.tiutr{
+    margin-top: 100px;  
+}
+
+.tpere{
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+.tmere{
+    margin-top: 75px;
+    margin-right: 500px;
+}
+
+.tsoeur{
+    margin-top: 75px;
+    margin-left: 500px;
+}
+
+.tfrere{
+    margin-top: 100px;
+    margin-right: 500px;
+}
+
+/**Pop up troisième section **/
+.haut:hover .foncé{
+    opacity: 0;
+}
+
+.haut:hover .clair{
+    opacity: 0;
+}
+
+#sectr:hover + .hide3{
+    box-shadow: -5px -5px 30px 5px #74a6ec, 5px 5px 30px 5px #befcff;
+    display: block;
+}
+
+
+/** Pop up première section  **/
+#secun:hover {
+    opacity: 0;
+}
+
+#secun:hover + .hide{
+    transition-duration: 0.5s;
+    box-shadow: -5px -5px 30px 5px #74a6ec, 5px 5px 30px 5px #befcff;
+    visibility: visible;
+}
+
+
+/**Pop up deuxième section **/
+#secde:hover{
+    opacity: 0;
+}
+
+#secde:hover + .hide2{
+    box-shadow: -5px -5px 30px 5px #74a6ec, 5px 5px 30px 5px #befcff;
+    display: block;
+}
+
+
+/** Pop up **/  
+.hide{
+    visibility: hidden;
+    position: absolute;
+    background-color:rgba(147,195,246,255);
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.4);
+    border-width: 10px;
+}
+
+.hide2{
+    display: none;
+    position: absolute;
+    background-color:rgba(147,195,246,255);
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.4);
+    border-width: 10px;
+}
+
+.hide3{
+    display: none;
+    position: absolute;
+    background-color:rgba(147,195,246,255);
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.4);
+    border-width: 10px;
+}
+
+/**Pied de page **/
+footer{
+    height: 10vh;
+    text-align: right;
+    border-color: #a3539e;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/** Images **/
+
+img{
+    float: right;
+    width: 40%;
+
+}
+
+.laon{
+    width: 25%;
+    margin-right: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+.Bruyere{
+    float: left;
+    width: 20%;
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.Ardon{
+    width: 15%;
+    margin-right: 20px;
+    margin-top: 16px;
+    border-radius: 10px;
+}
+
+.prov{
+    float: left;
+    width: 15%;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.pm{
+    width: 15%;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.iutr{
+    float: left;
+    width: 15%;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.pere{
+    width: 8%;
+    margin-right: 100px;
+    margin-top: 20px;
+    border-radius: 10px;   
+}
+
+.mere{
+    float: left;
+    width: 8%;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.soeur{
+    width: 8%;
+    margin-right: 100px;
+    margin-top: 35px;
+    border-radius: 10px;      
+}
+
+.frere{
+    float: left;
+    width: 8%;
+    margin-top: 45px;
+    margin-left: 40px;
+    border-radius: 10px;    
+}
